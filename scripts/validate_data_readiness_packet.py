@@ -28,6 +28,9 @@ REQUIRED_TOKENS = {
     "DR-OPTION-C",
     "DR-OPTION-D",
     "python scripts\\validate_data_readiness_packet.py",
+    "python scripts\\validate_data_readiness_owner_gate.py",
+    "data-readiness-owner-decision-template.md",
+    "data_readiness_lane_selection.yml",
 }
 
 FORBIDDEN_PROMOTION_TOKENS = {

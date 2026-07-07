@@ -43,6 +43,12 @@ allowed files, define the forbidden files, define validators, and record whether
 the lane remains data-free or authorizes a later, separately reviewed data
 packet.
 
+Use
+[`data-readiness-owner-decision-template.md`](data-readiness-owner-decision-template.md)
+or the GitHub issue form
+[`data_readiness_lane_selection.yml`](../../.github/ISSUE_TEMPLATE/data_readiness_lane_selection.yml)
+to record that decision.
+
 If a proposed lane needs a new relationship verb, profile, enum value, authority
 rung, evidence utility flag, source-tradition preference, or theological
 classification, route it upstream to `logos-governance-architecture` before
@@ -74,6 +80,7 @@ mirrors, registry mirrors, validators, or tests must run:
 
 ```powershell
 python scripts\validate_data_readiness_packet.py
+python scripts\validate_data_readiness_owner_gate.py
 python scripts\run_validation_suite.py
 python -m pytest -q
 git diff --check
