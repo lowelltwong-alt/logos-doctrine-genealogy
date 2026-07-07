@@ -1,0 +1,10 @@
+[project]
+name = "logos-doctrine-genealogy"
+version = "0.1.0"
+description = "Scaffold-only doctrine lineage and profile-comparison plane for the Logos project family."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+

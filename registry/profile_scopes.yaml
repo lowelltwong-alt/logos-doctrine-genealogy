@@ -1,0 +1,24 @@
+object_type: profile_scope_mirror
+trust_zone: active_scaffold
+lifecycle_status: active
+provenance_note: "Created 2026-07-06 by Codex from governance-owned tradition/profile seed list D3."
+reason_for_inclusion: "Allow local validators to fail closed on unknown profile scopes while preserving upstream governance authority."
+source_repo: logos-governance-architecture
+local_profile_authority: false
+profile_scope_required_for_contested_claims: true
+profile_scopes:
+  - value: reformed
+  - value: arminian_wesleyan
+  - value: baptist
+  - value: anglican
+  - value: lutheran
+  - value: presbyterian
+  - value: methodist
+  - value: pentecostal_charismatic
+  - value: patristic_creedal
+  - value: roman_catholic
+  - value: eastern_orthodox
+  - value: oriental_orthodox
+  - value: church_of_the_east
+  - value: pre_division_patristic
+

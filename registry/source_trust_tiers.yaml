@@ -1,0 +1,27 @@
+object_type: source_trust_tier_mirror
+trust_zone: active_scaffold
+lifecycle_status: active
+provenance_note: "Created 2026-07-06 by Codex from governance-owned authority rung vocabulary."
+reason_for_inclusion: "Mirror source authority rungs for future validation while keeping source rows and imports unauthorized."
+source_repo: logos-governance-architecture
+source_rows_authorized: false
+source_imports_authorized: false
+local_authority_rung_authority: false
+authority_rungs:
+  - rung: S0
+    value: canonical_scripture
+  - rung: S1
+    value: ecumenical_boundary_instrument
+  - rung: S2
+    value: conciliar_or_creedal_witness
+  - rung: S3
+    value: confessional_instrument
+  - rung: S4
+    value: patristic_and_doctor_witness
+  - rung: S5
+    value: theologian_formulation
+  - rung: S6
+    value: scholarly_analysis
+  - rung: S7
+    value: adversarial_or_heterodox_source
+
