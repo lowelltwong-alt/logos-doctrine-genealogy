@@ -14,6 +14,7 @@ CHECKS = [
     ("data_readiness_owner_gate", "validate_data_readiness_owner_gate"),
     ("data_readiness_runbook", "validate_data_readiness_runbook"),
     ("schema_mirrors", "validate_schema_mirrors"),
+    ("mirror_freshness", "validate_mirror_freshness"),
 ]
 
 

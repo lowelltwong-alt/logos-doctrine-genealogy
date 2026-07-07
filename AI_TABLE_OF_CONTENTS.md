@@ -36,7 +36,7 @@ reason_for_inclusion: "Agents need tags and read-when guidance for authority, so
 - [data/README.md](data/README.md) - tags: `empty-data`, `no-records`; read before adding anything under `data/`.
 - [schemas/README.md](schemas/README.md) - tags: `schema-mirror`, `governance-owned`; read before schema work.
 - [schemas/doctrine_genealogy/README.md](schemas/doctrine_genealogy/README.md) - tags: `doctrine-genealogy-schema`, `non-authorizing`.
-- [schemas/doctrine_genealogy/schema_mirror_manifest.yaml](schemas/doctrine_genealogy/schema_mirror_manifest.yaml) - tags: `schema-mirror`, `dr-option-a`, `checksum`, `governance-owned`; read before editing mirrored schema files.
+- [schemas/doctrine_genealogy/schema_mirror_manifest.yaml](schemas/doctrine_genealogy/schema_mirror_manifest.yaml) - tags: `schema-mirror`, `dr-option-a`, `checksum`, `governance-owned`, `mirror-freshness`, `w2-2`; read before editing mirrored schema files or checking staleness against upstream governance schemas.
 
 ## Roadmap And Review
 
@@ -59,4 +59,5 @@ reason_for_inclusion: "Agents need tags and read-when guidance for authority, so
 - [scripts/validate_data_readiness_owner_gate.py](scripts/validate_data_readiness_owner_gate.py) - tags: `owner-decision`, `data-readiness`, `issue-template`, `lane-selection`, `non-authorizing`.
 - [scripts/validate_data_readiness_runbook.py](scripts/validate_data_readiness_runbook.py) - tags: `data-readiness`, `implementation-runbook`, `preflight`, `non-authorizing`.
 - [scripts/validate_schema_mirrors.py](scripts/validate_schema_mirrors.py) - tags: `schema-mirror`, `dr-option-a`, `checksum`, `non-authorizing`.
+- [scripts/validate_mirror_freshness.py](scripts/validate_mirror_freshness.py) - tags: `mirror-freshness`, `schema-mirror`, `upstream-drift`, `w2-2`, `non-authorizing`; validates staleness fields and compares upstream governance schema hashes when a local governance checkout is available.
 

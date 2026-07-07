@@ -22,6 +22,7 @@ REQUIRED_MIRROR_TOKENS = {
     "authorizes_graph_retrieval_vector_truth: false",
     "authorizes_scripture_or_chunk_output: false",
     "authorizes_new_vocabularies: false",
+    "scripts/validate_mirror_freshness.py",
 }
 
 REQUIRED_UPSTREAM_PATH_TOKENS = {
