@@ -1,0 +1,64 @@
+object_type: controlled_values_mirror
+trust_zone: active_scaffold
+lifecycle_status: active
+provenance_note: "Created 2026-07-06 by Codex from governance-owned doctrine-genealogy vocabulary and relationship registry."
+reason_for_inclusion: "Provide local validator inputs without granting local vocabulary authority."
+source_repo: logos-governance-architecture
+decision_basis:
+  - FABLE-D1-D10-2026-07-06
+  - Kernel A3
+  - Kernel B
+local_vocabulary_authority: false
+relationship_verbs:
+  - verb: derives_from
+  - verb: depends_on
+  - verb: clarifies
+  - verb: modifies
+  - verb: systematizes
+  - verb: reads_back_into
+  - verb: interprets_passage
+  - verb: cites_source
+  - verb: receives
+  - verb: rejects
+  - verb: counters
+  - verb: partially_aligns_with
+  - verb: tensions_with
+forbidden_relationship_verbs:
+  - related_to
+  - influences
+  - condemns
+  - is_condemned_by
+orthodoxy_status:
+  - unclassified_candidate
+  - orthodox_core
+  - orthodox_permitted_diversity
+  - disputed_within_orthodoxy
+  - heterodox
+  - non_christian_comparative
+claim_role:
+  - historical_description
+  - normative_position
+  - comparative_note
+authority_rungs:
+  - canonical_scripture
+  - ecumenical_boundary_instrument
+  - conciliar_or_creedal_witness
+  - confessional_instrument
+  - patristic_and_doctor_witness
+  - theologian_formulation
+  - scholarly_analysis
+  - adversarial_or_heterodox_source
+evidence_utility_flags:
+  - historical_value
+  - linguistic_value
+  - reception_value
+  - adversarial_value
+evidence_utility_levels:
+  - high
+  - medium
+  - low
+defaults:
+  orthodoxy_status: unclassified_candidate
+  claim_role: historical_description
+  review_status: unreviewed
+

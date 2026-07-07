@@ -1,0 +1,61 @@
+object_type: governance_dependency_map_mirror
+trust_zone: active_scaffold
+lifecycle_status: active
+provenance_note: "Created 2026-07-06 by Codex as the child-repo mirror required by the accepted Issue #83 scaffold."
+reason_for_inclusion: "Keep local front doors, registry mirrors, validators, and authority controls tied to the upstream governance dependency map."
+schema_version: logos_child_governance_dependency_map_mirror.v1
+repo: logos-doctrine-genealogy
+source_of_truth_repo: logos-governance-architecture
+source_of_truth_url: https://github.com/lowelltwong-alt/logos-governance-architecture
+registration_issue: https://github.com/lowelltwong-alt/logos-governance-architecture/issues/83
+owner_acceptance_comment: https://github.com/lowelltwong-alt/logos-governance-architecture/issues/83#issuecomment-4896715109
+owner_decision_record: FABLE-D1-D10-2026-07-06
+authority_level: interpretive_historical_profile_scoped
+mirror_authority:
+  replaces_upstream_governance: false
+  authorizes_child_repo_override: false
+  authorizes_doctrine_lineage_records: false
+  authorizes_source_imports: false
+  authorizes_reviewed_lineage_promotion: false
+  authorizes_graph_retrieval_vector_truth: false
+  authorizes_scripture_or_chunk_output: false
+  authorizes_new_vocabularies: false
+required_upstream_paths:
+  - governance/LOGOS_REPO_REGISTRY.yaml
+  - governance/REPOSITORY_LINK_CONTRACTS.md
+  - governance/ADDING_NEW_LOGOS_REPOS.md
+  - docs/roadmap/fable-kernels/README.md
+  - docs/roadmap/fable-kernels/OWNER-DECISIONS-AND-PILOTS.md
+  - docs/roadmap/fable-kernels/COMPLETION_AUDIT.md
+  - incoming/research/doctrine-genealogy-registration/scaffold_blueprint.md
+  - incoming/research/doctrine-genealogy-registration/scaffold_pr_file_list.md
+required_local_paths:
+  - README.md
+  - AGENTS.md
+  - AI_FRONT_DOOR.md
+  - AI_TABLE_OF_CONTENTS.md
+  - governance/UPSTREAM_GOVERNANCE_CONTRACT.md
+  - governance/AUTHORITY_AND_NON_AUTHORIZATION_RULES.md
+  - governance/SOURCE_TRUST_RULES.md
+  - governance/PROFILE_SCOPE_RULES.md
+  - governance/THEOLOGIAN_LINEAGE_RELATIONSHIP_RULES.md
+  - registry/controlled_values_mirror.yaml
+  - registry/profile_scopes.yaml
+  - registry/source_trust_tiers.yaml
+  - data/README.md
+  - scripts/run_validation_suite.py
+validators:
+  - scripts/validate_governance_dependency_map_mirror.py
+  - scripts/validate_source_trust_rules.py
+  - scripts/validate_profile_scope_rules.py
+  - scripts/validate_theologian_lineage_relationship_rules.py
+  - scripts/validate_no_authority_leakage.py
+update_triggers:
+  - AGENTS.md
+  - AI_FRONT_DOOR.md
+  - AI_TABLE_OF_CONTENTS.md
+  - governance/
+  - registry/
+  - scripts/
+  - tests/
+
