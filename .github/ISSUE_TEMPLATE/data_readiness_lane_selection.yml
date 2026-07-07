@@ -1,0 +1,98 @@
+name: Data Readiness Lane Selection
+description: Record an owner selection for the next non-authorizing data-readiness lane.
+title: "Data readiness lane selection: DR-OPTION-"
+labels:
+  - governance
+  - owner-decision
+  - data-readiness
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue records an owner decision only. It does not authorize doctrine-lineage records, source imports or source rows, reviewed-lineage promotion, graph/retrieval/vector truth, Scripture or chunk output, new vocabularies, or theology authority.
+  - type: dropdown
+    id: selected_lane
+    attributes:
+      label: Selected lane
+      description: Select exactly one lane from docs/roadmap/data-readiness-decision-packet.md.
+      options:
+        - DR-OPTION-A - Governance schema mirror only
+        - DR-OPTION-B - Source-intake docket only
+        - DR-OPTION-C - First doctrine-slice review packet only
+        - DR-OPTION-D - Evidence-product harness only
+    validations:
+      required: true
+  - type: textarea
+    id: decision_summary
+    attributes:
+      label: Decision summary
+      description: Owner wording for the selected lane and why it is selected.
+    validations:
+      required: true
+  - type: textarea
+    id: allowed_files
+    attributes:
+      label: Allowed files
+      description: List the exact files or directories this lane may touch.
+      placeholder: |
+        - docs/roadmap/...
+        - schemas/...
+        - scripts/validate_...
+    validations:
+      required: true
+  - type: textarea
+    id: forbidden_files
+    attributes:
+      label: Forbidden files and surfaces
+      description: Confirm forbidden files or surfaces for this lane.
+      value: |
+        - data/
+        - sources/
+        - source rows
+        - doctrine-lineage records
+        - reviewed-lineage records
+        - graph/retrieval/vector truth
+        - Scripture or chunk output
+    validations:
+      required: true
+  - type: checkboxes
+    id: non_authorizations
+    attributes:
+      label: Non-authorizations
+      options:
+        - label: This does not authorize doctrine-lineage records.
+          required: true
+        - label: This does not authorize source imports or source rows.
+          required: true
+        - label: This does not authorize reviewed-lineage promotion.
+          required: true
+        - label: This does not authorize graph/retrieval/vector truth.
+          required: true
+        - label: This does not authorize Scripture or chunk output.
+          required: true
+        - label: This does not authorize new relationship verbs, profiles, enum values, authority rungs, or evidence utility flags.
+          required: true
+        - label: This does not authorize theology authority or Codex inference of doctrine.
+          required: true
+  - type: checkboxes
+    id: required_validators
+    attributes:
+      label: Required validators
+      options:
+        - label: python scripts\validate_data_readiness_packet.py
+          required: true
+        - label: python scripts\validate_data_readiness_owner_gate.py
+          required: true
+        - label: python scripts\run_validation_suite.py
+          required: true
+        - label: python -m pytest -q
+          required: true
+        - label: git diff --check
+          required: true
+  - type: checkboxes
+    id: escalation
+    attributes:
+      label: Escalation
+      options:
+        - label: If new values, classifications, source-tradition preference, or theology authority are needed, this must route upstream to logos-governance-architecture before local implementation.
+          required: true

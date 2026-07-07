@@ -76,7 +76,9 @@ REQUIRED_LOCAL_PATHS = {
     "registry/controlled_values_mirror.yaml",
     "registry/profile_scopes.yaml",
     "registry/source_trust_tiers.yaml",
+    ".github/ISSUE_TEMPLATE/data_readiness_lane_selection.yml",
     "docs/roadmap/data-readiness-decision-packet.md",
+    "docs/roadmap/data-readiness-owner-decision-template.md",
     "docs/roadmap/first-task-and-readiness.md",
     "schemas/README.md",
     "schemas/doctrine_genealogy/README.md",
@@ -89,6 +91,7 @@ REQUIRED_LOCAL_PATHS = {
     "scripts/validate_theologian_lineage_relationship_rules.py",
     "scripts/validate_no_authority_leakage.py",
     "scripts/validate_data_readiness_packet.py",
+    "scripts/validate_data_readiness_owner_gate.py",
 }
 
 
