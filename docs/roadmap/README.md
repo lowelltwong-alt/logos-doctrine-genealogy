@@ -9,6 +9,7 @@ reason_for_inclusion: "Show why the repo now exists and what remains gated befor
 # Roadmap
 
 - [data-readiness-decision-packet.md](data-readiness-decision-packet.md)
+- [data-readiness-lane-implementation-runbook.md](data-readiness-lane-implementation-runbook.md)
 - [data-readiness-owner-decision-template.md](data-readiness-owner-decision-template.md)
 - [first-task-and-readiness.md](first-task-and-readiness.md)
 

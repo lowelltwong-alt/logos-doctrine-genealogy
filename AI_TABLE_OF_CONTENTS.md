@@ -40,6 +40,7 @@ reason_for_inclusion: "Agents need tags and read-when guidance for authority, so
 ## Roadmap And Review
 
 - [docs/roadmap/data-readiness-decision-packet.md](docs/roadmap/data-readiness-decision-packet.md) - tags: `data-readiness`, `owner-gate`, `non-authorizing`, `source-intake`, `schema-mirror`, `evidence-harness`; read before proposing source intake, schema mirroring, first doctrine-slice work, examples, or data.
+- [docs/roadmap/data-readiness-lane-implementation-runbook.md](docs/roadmap/data-readiness-lane-implementation-runbook.md) - tags: `data-readiness`, `implementation-runbook`, `preflight`, `owner-gate`, `non-authorizing`; read after an owner selects one DR-OPTION lane and before any lane implementation PR.
 - [docs/roadmap/data-readiness-owner-decision-template.md](docs/roadmap/data-readiness-owner-decision-template.md) - tags: `owner-decision`, `data-readiness`, `lane-selection`, `audit`, `non-authorizing`; read when recording or checking an owner lane selection.
 - [.github/ISSUE_TEMPLATE/data_readiness_lane_selection.yml](.github/ISSUE_TEMPLATE/data_readiness_lane_selection.yml) - tags: `github-issue`, `owner-decision`, `data-readiness`, `lane-selection`; use to open the formal owner decision issue.
 - [docs/roadmap/first-task-and-readiness.md](docs/roadmap/first-task-and-readiness.md) - tags: `first-task`, `readiness`, `why-this-repo-exists`.
@@ -55,4 +56,5 @@ reason_for_inclusion: "Agents need tags and read-when guidance for authority, so
 - [scripts/validate_no_authority_leakage.py](scripts/validate_no_authority_leakage.py) - tags: `authority-leakage`, `non-authorizations`.
 - [scripts/validate_data_readiness_packet.py](scripts/validate_data_readiness_packet.py) - tags: `data-readiness`, `roadmap`, `owner-gate`, `non-authorizing`.
 - [scripts/validate_data_readiness_owner_gate.py](scripts/validate_data_readiness_owner_gate.py) - tags: `owner-decision`, `data-readiness`, `issue-template`, `lane-selection`, `non-authorizing`.
+- [scripts/validate_data_readiness_runbook.py](scripts/validate_data_readiness_runbook.py) - tags: `data-readiness`, `implementation-runbook`, `preflight`, `non-authorizing`.
 
