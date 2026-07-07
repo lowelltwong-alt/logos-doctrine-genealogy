@@ -13,6 +13,7 @@ CHECKS = [
     ("data_readiness_packet", "validate_data_readiness_packet"),
     ("data_readiness_owner_gate", "validate_data_readiness_owner_gate"),
     ("data_readiness_runbook", "validate_data_readiness_runbook"),
+    ("schema_mirrors", "validate_schema_mirrors"),
 ]
 
 

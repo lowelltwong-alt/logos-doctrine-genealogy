@@ -1,0 +1,50 @@
+object_type: doctrine_genealogy_schema_mirror_manifest
+trust_zone: active_scaffold
+lifecycle_status: active
+provenance_note: "Created 2026-07-07 by Codex after owner authorized DR-OPTION-A in issue #4."
+reason_for_inclusion: "Record the exact governance-owned doctrine-genealogy schema standards mirrored into this child repo without transferring schema authority or authorizing data work."
+schema_version: doctrine_genealogy_schema_mirror_manifest.v1
+source:
+  repo: logos-governance-architecture
+  source_path: schemas/doctrine_genealogy/
+  source_commit: b456a28a4bdc15e4222638e1d89a1f5097c07116
+owner_decision:
+  selected_lane: DR-OPTION-A
+  issue: https://github.com/lowelltwong-alt/logos-doctrine-genealogy/issues/4
+  decision_comment: https://github.com/lowelltwong-alt/logos-doctrine-genealogy/issues/4#issuecomment-4899887684
+mirror_authority:
+  local_schema_mirrors_are_source_of_truth: false
+  authorizes_doctrine_lineage_records: false
+  authorizes_source_imports: false
+  authorizes_source_rows: false
+  authorizes_reviewed_lineage_promotion: false
+  authorizes_graph_retrieval_vector_truth: false
+  authorizes_scripture_or_chunk_output: false
+  authorizes_new_vocabularies: false
+  authorizes_runtime_adapters: false
+  authorizes_theology_authority: false
+mirrored_files:
+  - path: schemas/doctrine_genealogy/date_block.v1.schema.json
+    source_path: schemas/doctrine_genealogy/date_block.v1.schema.json
+    sha256: 87b04f72a5241638e40f7b8e9a2334155dd1e0e4153de2ce635563922e4916b0
+    file_kind: json_schema
+  - path: schemas/doctrine_genealogy/doctrine_provenance.v1.schema.json
+    source_path: schemas/doctrine_genealogy/doctrine_provenance.v1.schema.json
+    sha256: c3893e3efb4f02ee62b7a93d2f0698260337d46d9f56fb4e118fb7db1c30bb63
+    file_kind: json_schema
+  - path: schemas/doctrine_genealogy/doctrine_node.v1.schema.json
+    source_path: schemas/doctrine_genealogy/doctrine_node.v1.schema.json
+    sha256: b3efad1c14c1cc583ae1828e943b751dfb9673875c0e39223a607763ef9323d7
+    file_kind: json_schema
+  - path: schemas/doctrine_genealogy/genealogy_edge.v1.schema.json
+    source_path: schemas/doctrine_genealogy/genealogy_edge.v1.schema.json
+    sha256: a5305b8718b032583b86859bba65d33e8094d2851a79945d12ace37ba9c4e7e1
+    file_kind: json_schema
+  - path: schemas/doctrine_genealogy/evidence_packet.v1.schema.json
+    source_path: schemas/doctrine_genealogy/evidence_packet.v1.schema.json
+    sha256: 70cdf5a9da37c20b5aab65dff46447bb2f53453e92a9a6a04dd95098d19d4b78
+    file_kind: json_schema
+  - path: schemas/doctrine_genealogy/gate_trigger_registry.v1.yaml
+    source_path: schemas/doctrine_genealogy/gate_trigger_registry.v1.yaml
+    sha256: 4cfc16da3ca8f721e1318c32a427a91b70c81e78185aea755422f9e42fc59dbd
+    file_kind: gate_trigger_registry
