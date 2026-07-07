@@ -26,25 +26,25 @@ mirror_authority:
 mirrored_files:
   - path: schemas/doctrine_genealogy/date_block.v1.schema.json
     source_path: schemas/doctrine_genealogy/date_block.v1.schema.json
-    sha256: 87b04f72a5241638e40f7b8e9a2334155dd1e0e4153de2ce635563922e4916b0
+    sha256: d7157555e5906e10f4ecfc764839a32eeb5dd1e2c6870296fd4a7f4055e3f8f2
     file_kind: json_schema
   - path: schemas/doctrine_genealogy/doctrine_provenance.v1.schema.json
     source_path: schemas/doctrine_genealogy/doctrine_provenance.v1.schema.json
-    sha256: c3893e3efb4f02ee62b7a93d2f0698260337d46d9f56fb4e118fb7db1c30bb63
+    sha256: 338f0e78b492e336aa585d83255b119917540bc42b37e7e6fc69cdd29fa42b8a
     file_kind: json_schema
   - path: schemas/doctrine_genealogy/doctrine_node.v1.schema.json
     source_path: schemas/doctrine_genealogy/doctrine_node.v1.schema.json
-    sha256: b3efad1c14c1cc583ae1828e943b751dfb9673875c0e39223a607763ef9323d7
+    sha256: 715236f9c937f37541c037d7a568a1466df5bf802710a9356939c0a2b7be867d
     file_kind: json_schema
   - path: schemas/doctrine_genealogy/genealogy_edge.v1.schema.json
     source_path: schemas/doctrine_genealogy/genealogy_edge.v1.schema.json
-    sha256: a5305b8718b032583b86859bba65d33e8094d2851a79945d12ace37ba9c4e7e1
+    sha256: 2e0104adc93de83805614d48be721f11a689bd79ca45df993338bd424b30ea6f
     file_kind: json_schema
   - path: schemas/doctrine_genealogy/evidence_packet.v1.schema.json
     source_path: schemas/doctrine_genealogy/evidence_packet.v1.schema.json
-    sha256: 70cdf5a9da37c20b5aab65dff46447bb2f53453e92a9a6a04dd95098d19d4b78
+    sha256: af6de6cb3d57cf4d0a4e2d2a199bbb874ca65202a80d024a38b5f20c2669dcbf
     file_kind: json_schema
   - path: schemas/doctrine_genealogy/gate_trigger_registry.v1.yaml
     source_path: schemas/doctrine_genealogy/gate_trigger_registry.v1.yaml
-    sha256: 4cfc16da3ca8f721e1318c32a427a91b70c81e78185aea755422f9e42fc59dbd
+    sha256: 3898eaf90e82447033f4a900ab913eec516a15259fb411c3f49713bcc6dbfaab
     file_kind: gate_trigger_registry

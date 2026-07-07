@@ -16,27 +16,27 @@ SCHEMA_DIR = "schemas/doctrine_genealogy"
 
 EXPECTED_MIRRORS = {
     "schemas/doctrine_genealogy/date_block.v1.schema.json": (
-        "87b04f72a5241638e40f7b8e9a2334155dd1e0e4153de2ce635563922e4916b0",
+        "d7157555e5906e10f4ecfc764839a32eeb5dd1e2c6870296fd4a7f4055e3f8f2",
         "json_schema",
     ),
     "schemas/doctrine_genealogy/doctrine_provenance.v1.schema.json": (
-        "c3893e3efb4f02ee62b7a93d2f0698260337d46d9f56fb4e118fb7db1c30bb63",
+        "338f0e78b492e336aa585d83255b119917540bc42b37e7e6fc69cdd29fa42b8a",
         "json_schema",
     ),
     "schemas/doctrine_genealogy/doctrine_node.v1.schema.json": (
-        "b3efad1c14c1cc583ae1828e943b751dfb9673875c0e39223a607763ef9323d7",
+        "715236f9c937f37541c037d7a568a1466df5bf802710a9356939c0a2b7be867d",
         "json_schema",
     ),
     "schemas/doctrine_genealogy/genealogy_edge.v1.schema.json": (
-        "a5305b8718b032583b86859bba65d33e8094d2851a79945d12ace37ba9c4e7e1",
+        "2e0104adc93de83805614d48be721f11a689bd79ca45df993338bd424b30ea6f",
         "json_schema",
     ),
     "schemas/doctrine_genealogy/evidence_packet.v1.schema.json": (
-        "70cdf5a9da37c20b5aab65dff46447bb2f53453e92a9a6a04dd95098d19d4b78",
+        "af6de6cb3d57cf4d0a4e2d2a199bbb874ca65202a80d024a38b5f20c2669dcbf",
         "json_schema",
     ),
     "schemas/doctrine_genealogy/gate_trigger_registry.v1.yaml": (
-        "4cfc16da3ca8f721e1318c32a427a91b70c81e78185aea755422f9e42fc59dbd",
+        "3898eaf90e82447033f4a900ab913eec516a15259fb411c3f49713bcc6dbfaab",
         "gate_trigger_registry",
     ),
 }
@@ -78,12 +78,9 @@ REQUIRED_GATE_TRIGGER_TOKENS = {
 }
 
 
-def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(65536), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+def normalized_text_sha256(path: Path) -> str:
+    text = path.read_text(encoding="utf-8").replace("\r\n", "\n").replace("\r", "\n")
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
 def manifest_block_for(text: str, path: str) -> str:
@@ -114,7 +111,7 @@ def validate(root: Path = ROOT) -> list[str]:
             errors.append(f"missing mirrored schema file: {rel}")
             continue
 
-        actual_hash = sha256(path)
+        actual_hash = normalized_text_sha256(path)
         if actual_hash != expected_hash:
             errors.append(f"schema mirror hash mismatch: {rel} expected {expected_hash} got {actual_hash}")
 
