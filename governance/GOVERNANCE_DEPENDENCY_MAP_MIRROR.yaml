@@ -1,7 +1,7 @@
 object_type: governance_dependency_map_mirror
 trust_zone: active_scaffold
 lifecycle_status: active
-provenance_note: "Created 2026-07-06 by Codex as the child-repo mirror required by the accepted Issue #83 scaffold. Updated 2026-07-07 to include the data-readiness decision packet and owner-gate validators."
+provenance_note: "Created 2026-07-06 by Codex as the child-repo mirror required by the accepted Issue #83 scaffold. Updated 2026-07-07 to include the data-readiness decision packet, owner-gate, and runbook validators."
 reason_for_inclusion: "Keep local front doors, registry mirrors, validators, and authority controls tied to the upstream governance dependency map."
 schema_version: logos_child_governance_dependency_map_mirror.v1
 repo: logos-doctrine-genealogy
@@ -43,6 +43,7 @@ required_local_paths:
   - registry/profile_scopes.yaml
   - registry/source_trust_tiers.yaml
   - docs/roadmap/data-readiness-decision-packet.md
+  - docs/roadmap/data-readiness-lane-implementation-runbook.md
   - docs/roadmap/data-readiness-owner-decision-template.md
   - docs/roadmap/first-task-and-readiness.md
   - .github/ISSUE_TEMPLATE/data_readiness_lane_selection.yml
@@ -56,6 +57,7 @@ validators:
   - scripts/validate_no_authority_leakage.py
   - scripts/validate_data_readiness_packet.py
   - scripts/validate_data_readiness_owner_gate.py
+  - scripts/validate_data_readiness_runbook.py
 update_triggers:
   - AGENTS.md
   - AI_FRONT_DOOR.md

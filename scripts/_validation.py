@@ -78,6 +78,7 @@ REQUIRED_LOCAL_PATHS = {
     "registry/source_trust_tiers.yaml",
     ".github/ISSUE_TEMPLATE/data_readiness_lane_selection.yml",
     "docs/roadmap/data-readiness-decision-packet.md",
+    "docs/roadmap/data-readiness-lane-implementation-runbook.md",
     "docs/roadmap/data-readiness-owner-decision-template.md",
     "docs/roadmap/first-task-and-readiness.md",
     "schemas/README.md",
@@ -92,6 +93,7 @@ REQUIRED_LOCAL_PATHS = {
     "scripts/validate_no_authority_leakage.py",
     "scripts/validate_data_readiness_packet.py",
     "scripts/validate_data_readiness_owner_gate.py",
+    "scripts/validate_data_readiness_runbook.py",
 }
 
 
