@@ -39,6 +39,7 @@ reason_for_inclusion: "Agents need tags and read-when guidance for authority, so
 
 ## Roadmap And Review
 
+- [docs/roadmap/data-readiness-decision-packet.md](docs/roadmap/data-readiness-decision-packet.md) - tags: `data-readiness`, `owner-gate`, `non-authorizing`, `source-intake`, `schema-mirror`, `evidence-harness`; read before proposing source intake, schema mirroring, first doctrine-slice work, examples, or data.
 - [docs/roadmap/first-task-and-readiness.md](docs/roadmap/first-task-and-readiness.md) - tags: `first-task`, `readiness`, `why-this-repo-exists`.
 - [docs/governance/promotion-gates.md](docs/governance/promotion-gates.md) - tags: `promotion`, `reviewed-lineage`, `owner-gate`.
 
@@ -50,4 +51,5 @@ reason_for_inclusion: "Agents need tags and read-when guidance for authority, so
 - [scripts/validate_profile_scope_rules.py](scripts/validate_profile_scope_rules.py) - tags: `profile-scope`.
 - [scripts/validate_theologian_lineage_relationship_rules.py](scripts/validate_theologian_lineage_relationship_rules.py) - tags: `relationship-verbs`.
 - [scripts/validate_no_authority_leakage.py](scripts/validate_no_authority_leakage.py) - tags: `authority-leakage`, `non-authorizations`.
+- [scripts/validate_data_readiness_packet.py](scripts/validate_data_readiness_packet.py) - tags: `data-readiness`, `roadmap`, `owner-gate`, `non-authorizing`.
 

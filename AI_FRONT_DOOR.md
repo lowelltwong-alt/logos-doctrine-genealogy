@@ -36,6 +36,7 @@ source-import owner without separate governance approval.
 - Improve registry mirrors only when they mirror already-approved governance
   values.
 - Prepare review packets for future owner decisions.
+- Prepare data-readiness decision packets that remain non-authorizing.
 
 ## Current Forbidden Work
 
