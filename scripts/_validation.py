@@ -102,6 +102,7 @@ REQUIRED_LOCAL_PATHS = {
     "scripts/validate_data_readiness_owner_gate.py",
     "scripts/validate_data_readiness_runbook.py",
     "scripts/validate_schema_mirrors.py",
+    "scripts/validate_mirror_freshness.py",
 }
 
 

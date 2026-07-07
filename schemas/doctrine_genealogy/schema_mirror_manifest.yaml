@@ -8,6 +8,15 @@ source:
   repo: logos-governance-architecture
   source_path: schemas/doctrine_genealogy/
   source_commit: b456a28a4bdc15e4222638e1d89a1f5097c07116
+mirror_freshness:
+  freshness_standard_ref: logos-governance-architecture:governance/MIRROR_FRESHNESS_STANDARD.yaml
+  freshness_standard_commit: ad338b5c2dc2c8d979843707aaaabb834cf64785
+  verified_against_source_commit_at: "2026-07-07T00:00:00Z"
+  staleness_budget_days: 14
+  local_source_repo_root_candidates:
+    - ../logos-governance-architecture
+  local_source_repo_unavailable_policy: report_when_unavailable
+  missing_or_drifted_mirrored_file_policy: fail_closed_when_source_repo_available
 owner_decision:
   selected_lane: DR-OPTION-A
   issue: https://github.com/lowelltwong-alt/logos-doctrine-genealogy/issues/4
