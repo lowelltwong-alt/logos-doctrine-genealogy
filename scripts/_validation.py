@@ -83,6 +83,13 @@ REQUIRED_LOCAL_PATHS = {
     "docs/roadmap/first-task-and-readiness.md",
     "schemas/README.md",
     "schemas/doctrine_genealogy/README.md",
+    "schemas/doctrine_genealogy/schema_mirror_manifest.yaml",
+    "schemas/doctrine_genealogy/date_block.v1.schema.json",
+    "schemas/doctrine_genealogy/doctrine_provenance.v1.schema.json",
+    "schemas/doctrine_genealogy/doctrine_node.v1.schema.json",
+    "schemas/doctrine_genealogy/genealogy_edge.v1.schema.json",
+    "schemas/doctrine_genealogy/evidence_packet.v1.schema.json",
+    "schemas/doctrine_genealogy/gate_trigger_registry.v1.yaml",
     "data/README.md",
     "data/.gitkeep",
     "scripts/run_validation_suite.py",
@@ -94,6 +101,7 @@ REQUIRED_LOCAL_PATHS = {
     "scripts/validate_data_readiness_packet.py",
     "scripts/validate_data_readiness_owner_gate.py",
     "scripts/validate_data_readiness_runbook.py",
+    "scripts/validate_schema_mirrors.py",
 }
 
 
