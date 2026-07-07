@@ -10,6 +10,7 @@ CHECKS = [
     ("profile_scope_rules", "validate_profile_scope_rules"),
     ("theologian_lineage_relationship_rules", "validate_theologian_lineage_relationship_rules"),
     ("no_authority_leakage", "validate_no_authority_leakage"),
+    ("data_readiness_packet", "validate_data_readiness_packet"),
 ]
 
 
