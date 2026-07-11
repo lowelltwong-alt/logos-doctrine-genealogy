@@ -27,6 +27,8 @@ REQUIRED_MIRROR_TOKENS = {
 
 REQUIRED_UPSTREAM_PATH_TOKENS = {
     "governance/LOGOS_REPO_REGISTRY.yaml",
+    "governance/LOGOS_LEARNING_LOOP_OPERATING_STANDARD.yaml",
+    "governance/registry/LLOS_ROUTE_REGISTRY.yaml",
     "governance/REPOSITORY_LINK_CONTRACTS.md",
     "governance/ADDING_NEW_LOGOS_REPOS.md",
     "docs/roadmap/fable-kernels/OWNER-DECISIONS-AND-PILOTS.md",

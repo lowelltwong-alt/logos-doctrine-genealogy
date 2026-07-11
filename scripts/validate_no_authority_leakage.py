@@ -52,6 +52,7 @@ def validate(root: Path = ROOT) -> list[str]:
             "authorizes_graph_retrieval_vector_truth: false",
             "authorizes_scripture_or_chunk_output: false",
             "authorizes_new_vocabularies: false",
+            "authorizes_runtime_adapters: false",
         ]:
             if token not in mirror_text:
                 errors.append(f"mirror missing no-authority token: {token}")

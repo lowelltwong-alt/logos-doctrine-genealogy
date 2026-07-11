@@ -1,0 +1,40 @@
+---
+object_type: llos_v1_lesson_index
+trust_zone: active_scaffold
+lifecycle_status: active
+provenance_note: "Created 2026-07-11 by Codex for W2-9 as an intentionally empty bootstrap."
+reason_for_inclusion: "Reserve a validator-protected local index surface for future human-reviewed LLOS records without admitting lessons, source material, doctrine data, theology claims, or DAD writes."
+---
+schema_version: logos.llos.lesson_index.v1
+index_id: logos_doctrine_genealogy_llos_v1
+adapter_ref: governance/llos_v1_adapter.yaml
+local_repository: logos-doctrine-genealogy
+route: doctrine
+state: empty_bootstrap
+admission:
+  standard_ref: logos-governance-architecture:governance/LOGOS_LEARNING_LOOP_OPERATING_STANDARD.yaml
+  human_review_required: true
+  records_present: false
+authority:
+  authorizes_runtime_adapters: false
+  authorizes_source_authority: false
+  authorizes_data_authority: false
+  authorizes_theology_authority: false
+  authorizes_source_imports: false
+  authorizes_source_rows: false
+  authorizes_data_records: false
+  authorizes_doctrine_lineage_records: false
+  authorizes_reviewed_lineage_promotion: false
+  authorizes_graph_retrieval_vector_truth: false
+  authorizes_lesson_admission: false
+  authorizes_lesson_application: false
+dad_bridge:
+  may_read_approved_metadata: true
+  may_write_doctrine_files: false
+  may_mutate_llos_adapter: false
+  may_mutate_llos_lesson_index: false
+  requires_new_explicit_approval_for_every_doctrine_write: true
+  approval_must_be_fresh_and_explicit: true
+  authority_transfers: false
+lessons: []
+lesson_graph: []

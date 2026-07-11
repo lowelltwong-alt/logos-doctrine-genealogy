@@ -15,6 +15,7 @@ CHECKS = [
     ("data_readiness_runbook", "validate_data_readiness_runbook"),
     ("schema_mirrors", "validate_schema_mirrors"),
     ("mirror_freshness", "validate_mirror_freshness"),
+    ("llos_v1_bootstrap", "validate_llos_v1_bootstrap"),
 ]
 
 

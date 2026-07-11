@@ -59,6 +59,7 @@ REQUIRED_FALSE_AUTHORIZATIONS = {
     "authorizes_new_profiles",
     "authorizes_new_enum_values",
     "authorizes_theology_authority",
+    "authorizes_runtime_adapters",
 }
 
 REQUIRED_LOCAL_PATHS = {
@@ -73,6 +74,8 @@ REQUIRED_LOCAL_PATHS = {
     "governance/SOURCE_TRUST_RULES.md",
     "governance/PROFILE_SCOPE_RULES.md",
     "governance/THEOLOGIAN_LINEAGE_RELATIONSHIP_RULES.md",
+    "governance/llos_v1_adapter.yaml",
+    "governance/llos_v1_lesson_index.yaml",
     "registry/controlled_values_mirror.yaml",
     "registry/profile_scopes.yaml",
     "registry/source_trust_tiers.yaml",
@@ -103,6 +106,7 @@ REQUIRED_LOCAL_PATHS = {
     "scripts/validate_data_readiness_runbook.py",
     "scripts/validate_schema_mirrors.py",
     "scripts/validate_mirror_freshness.py",
+    "scripts/validate_llos_v1_bootstrap.py",
 }
 
 
