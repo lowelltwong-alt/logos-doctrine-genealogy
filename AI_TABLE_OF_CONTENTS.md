@@ -23,6 +23,8 @@ reason_for_inclusion: "Agents need tags and read-when guidance for authority, so
 - [governance/SOURCE_TRUST_RULES.md](governance/SOURCE_TRUST_RULES.md) - tags: `source-trust`, `licensing`, `source-imports`; read before any source-intake idea.
 - [governance/PROFILE_SCOPE_RULES.md](governance/PROFILE_SCOPE_RULES.md) - tags: `profile-scope`, `tradition-scope`, `anti-collapse`; read before scoped doctrine work.
 - [governance/THEOLOGIAN_LINEAGE_RELATIONSHIP_RULES.md](governance/THEOLOGIAN_LINEAGE_RELATIONSHIP_RULES.md) - tags: `relationship-verbs`, `lineage`, `anti-guessing`; read before edge or relationship work.
+- [governance/llos_v1_adapter.yaml](governance/llos_v1_adapter.yaml) - tags: `llos`, `metadata-only`, `dad-read-only`, `non-runtime`; read before LLOS or DAD metadata work.
+- [governance/llos_v1_lesson_index.yaml](governance/llos_v1_lesson_index.yaml) - tags: `llos`, `empty-bootstrap`, `human-review`, `no-lessons`; read before proposing a local lesson record.
 
 ## Registry Mirrors
 
@@ -60,4 +62,5 @@ reason_for_inclusion: "Agents need tags and read-when guidance for authority, so
 - [scripts/validate_data_readiness_runbook.py](scripts/validate_data_readiness_runbook.py) - tags: `data-readiness`, `implementation-runbook`, `preflight`, `non-authorizing`.
 - [scripts/validate_schema_mirrors.py](scripts/validate_schema_mirrors.py) - tags: `schema-mirror`, `dr-option-a`, `checksum`, `non-authorizing`.
 - [scripts/validate_mirror_freshness.py](scripts/validate_mirror_freshness.py) - tags: `mirror-freshness`, `schema-mirror`, `upstream-drift`, `w2-2`, `non-authorizing`; validates staleness fields and compares upstream governance schema hashes when a local governance checkout is available.
+- [scripts/validate_llos_v1_bootstrap.py](scripts/validate_llos_v1_bootstrap.py) - tags: `llos`, `empty-bootstrap`, `dad-read-only`, `authority-leakage`; validates the non-runtime adapter, empty lesson index, and fresh explicit approval requirement for every future DAD Doctrine-file write.
 

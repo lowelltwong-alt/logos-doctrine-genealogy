@@ -35,6 +35,8 @@ source-import owner without separate governance approval.
 - Improve local validators.
 - Improve registry mirrors only when they mirror already-approved governance
   values.
+- Maintain the non-runtime LLOS v1 adapter and its empty lesson-index bootstrap
+  as metadata-only mirrors of the approved upstream standard.
 - Prepare review packets for future owner decisions.
 - Prepare data-readiness decision packets that remain non-authorizing.
 
@@ -45,7 +47,8 @@ source-import owner without separate governance approval.
 - reviewed-lineage promotion;
 - graph/retrieval/vector truth;
 - Scripture or chunk output;
-- runtime adapters;
+- runtime adapters or runtime behavior; the LLOS v1 adapter is metadata-only
+  and does not authorize a runtime adapter;
 - new relationship verbs, profiles, enum values, authority rungs, or evidence
   utility flags;
 - theological classification inferred by AI.
@@ -59,6 +62,13 @@ python scripts\run_validation_suite.py
 python -m pytest -q
 git diff --check
 ```
+
+For LLOS work, also read
+[governance/llos_v1_adapter.yaml](governance/llos_v1_adapter.yaml) and
+[governance/llos_v1_lesson_index.yaml](governance/llos_v1_lesson_index.yaml).
+Logos-local tooling may write its own outbox and pull DAD central candidates.
+DAD may read approved outboxes and write its own central records under
+`DAD_DATA_ROOT`, but it must not push an inbox or write any Doctrine file.
 
 If a validator blocks the task, do not weaken it locally. Route the question to
 `logos-governance-architecture`.

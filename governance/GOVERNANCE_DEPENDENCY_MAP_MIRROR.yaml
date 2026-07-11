@@ -1,8 +1,8 @@
 object_type: governance_dependency_map_mirror
 trust_zone: active_scaffold
 lifecycle_status: active
-provenance_note: "Created 2026-07-06 by Codex as the child-repo mirror required by the accepted Issue #83 scaffold. Updated 2026-07-07 to include the data-readiness decision packet, owner-gate, runbook validators, DR-OPTION-A schema mirror validator, and W2-2 schema mirror freshness validator."
-reason_for_inclusion: "Keep local front doors, registry mirrors, validators, and authority controls tied to the upstream governance dependency map."
+provenance_note: "Created 2026-07-06 by Codex as the child-repo mirror required by the accepted Issue #83 scaffold. Updated 2026-07-07 to include the data-readiness decision packet, owner-gate, runbook validators, DR-OPTION-A schema mirror validator, and W2-2 schema mirror freshness validator. Updated 2026-07-11 for the W2-9 LLOS v1 non-runtime adapter and empty lesson-index bootstrap."
+reason_for_inclusion: "Keep local front doors, registry mirrors, validators, and authority controls tied to the upstream governance dependency map, including the approved metadata-only LLOS v1 mirror."
 schema_version: logos_child_governance_dependency_map_mirror.v1
 repo: logos-doctrine-genealogy
 source_of_truth_repo: logos-governance-architecture
@@ -20,8 +20,11 @@ mirror_authority:
   authorizes_graph_retrieval_vector_truth: false
   authorizes_scripture_or_chunk_output: false
   authorizes_new_vocabularies: false
+  authorizes_runtime_adapters: false
 required_upstream_paths:
   - governance/LOGOS_REPO_REGISTRY.yaml
+  - governance/LOGOS_LEARNING_LOOP_OPERATING_STANDARD.yaml
+  - governance/registry/LLOS_ROUTE_REGISTRY.yaml
   - governance/REPOSITORY_LINK_CONTRACTS.md
   - governance/ADDING_NEW_LOGOS_REPOS.md
   - docs/roadmap/fable-kernels/README.md
@@ -39,6 +42,8 @@ required_local_paths:
   - governance/SOURCE_TRUST_RULES.md
   - governance/PROFILE_SCOPE_RULES.md
   - governance/THEOLOGIAN_LINEAGE_RELATIONSHIP_RULES.md
+  - governance/llos_v1_adapter.yaml
+  - governance/llos_v1_lesson_index.yaml
   - registry/controlled_values_mirror.yaml
   - registry/profile_scopes.yaml
   - registry/source_trust_tiers.yaml
@@ -57,6 +62,7 @@ required_local_paths:
   - data/README.md
   - scripts/run_validation_suite.py
   - scripts/validate_mirror_freshness.py
+  - scripts/validate_llos_v1_bootstrap.py
 validators:
   - scripts/validate_governance_dependency_map_mirror.py
   - scripts/validate_source_trust_rules.py

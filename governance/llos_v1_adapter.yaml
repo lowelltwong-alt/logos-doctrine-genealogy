@@ -1,0 +1,53 @@
+---
+object_type: llos_v1_adapter
+trust_zone: active_scaffold
+lifecycle_status: active
+provenance_note: "Created 2026-07-11 by Codex for W2-9 after the owner-approved LLOS v1 rollout. Updated 2026-07-11 to express the owner-confirmed two-way communication boundary with asymmetric writes."
+reason_for_inclusion: "Mirror the approved LLOS v1 contract for this scaffold without creating runtime behavior, data authority, theology authority, or any DAD push/write into Logos."
+---
+schema_version: logos.llos.adapter.v1
+adapter_id: logos_doctrine_genealogy_llos_v1
+local_repository: logos-doctrine-genealogy
+upstream_standard:
+  repository: logos-governance-architecture
+  path: governance/LOGOS_LEARNING_LOOP_OPERATING_STANDARD.yaml
+  schema_version: logos.llos.standard.v1
+  standard_id: LLOS-v1
+  surface_version: 1.0.0
+route:
+  id: doctrine
+  registry_ref: logos-governance-architecture:governance/registry/LLOS_ROUTE_REGISTRY.yaml
+  category_allowlist:
+    - doctrine_scaffold
+    - profile_scope
+    - lineage_validation
+    - source_trust
+authority:
+  authorizes_runtime_adapters: false
+  authorizes_source_authority: false
+  authorizes_data_authority: false
+  authorizes_theology_authority: false
+  authorizes_source_imports: false
+  authorizes_source_rows: false
+  authorizes_data_records: false
+  authorizes_doctrine_lineage_records: false
+  authorizes_reviewed_lineage_promotion: false
+  authorizes_graph_retrieval_vector_truth: false
+  authorizes_lesson_admission: false
+  authorizes_lesson_application: false
+dad_bridge:
+  may_read_approved_metadata: true
+  may_read_approved_logos_outbox: true
+  may_write_central_dad_records: true
+  central_write_root: DAD_DATA_ROOT
+  may_write_doctrine_files: false
+  may_push_or_write_logos_inbox: false
+  may_mutate_llos_adapter: false
+  may_mutate_llos_lesson_index: false
+  requires_new_explicit_approval_for_every_doctrine_write: true
+  approval_must_be_fresh_and_explicit: true
+  authority_transfers: false
+logos_local_tooling:
+  may_write_local_outbox: true
+  may_read_or_pull_dad_central_candidates: true
+  may_receive_dad_file_push: false
